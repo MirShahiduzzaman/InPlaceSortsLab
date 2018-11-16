@@ -9,6 +9,7 @@ public class Runner
         //Place method here
         InPlaceSorts.selectionSort(check);
         long diff = System.currentTimeMillis() - start;
+        printArr(check);
         System.out.println(diff);
     }
 
