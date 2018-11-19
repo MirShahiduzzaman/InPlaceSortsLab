@@ -19,7 +19,17 @@ public class Runner
         diff = System.currentTimeMillis() - start;
         printArr(check2);
         System.out.println(diff + "\n");
+
+        String[] check3 = randStringArr(4,5);
+        printArr(check3);
+
+        start = System.currentTimeMillis();
+        InPlaceSorts.bubbleSort(check3);
+        diff = System.currentTimeMillis() - start;
+        printArr(check3);
+        System.out.println(diff + "\n");
     }
+
 
     public static double[] randDoubleArr(int count)
     {
@@ -49,7 +59,7 @@ public class Runner
      * @param length the length of the Strings to be made
      * @return array of random Strings
      */
-    public String[] randStringArr(int num, int length)
+    public static String[] randStringArr(int num, int length)
     {
         String[] arr = new String[num];
         while(num>0)
