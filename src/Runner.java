@@ -1,3 +1,4 @@
+/**Mir Shahiduzzaman 11/18/2018*/
 public class Runner
 {
     public static void main(String[] args)
@@ -30,7 +31,11 @@ public class Runner
         System.out.println(diff + "\n");
     }
 
-
+    /**
+     * Creates array of random doubles
+     * @param count number of number in the array
+     * @return array with random doubles
+     */
     public static double[] randDoubleArr(int count)
     {
         double[] randArr = new double[count];
@@ -42,6 +47,11 @@ public class Runner
         return(randArr);
     }
 
+    /**
+     * Creates array of random integers
+     * @param count number of number in the array
+     * @return array with random integers
+     */
     public static int[] randIntArr(int count)
     {
         int[] randArr = new int[count];
@@ -78,6 +88,10 @@ public class Runner
         return(arr);
     }
 
+    /**
+     * Prints array with commas separating each value
+     * @param arr double array to print
+     */
     public static void printArr(double[] arr)
     {
         String out = "";
@@ -93,6 +107,10 @@ public class Runner
         System.out.println(out);
     }
 
+    /**
+     * Prints array with commas separating each value
+     * @param arr int array to print
+     */
     public static void printArr(int[] arr)
     {
         String out = "";
@@ -108,6 +126,10 @@ public class Runner
         System.out.println(out);
     }
 
+    /**
+     * Prints array with commas separating each value
+     * @param arr String array to print
+     */
     public static void printArr(String[] arr)
     {
         String out = "";
